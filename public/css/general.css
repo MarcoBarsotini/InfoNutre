@@ -1,0 +1,15 @@
+:root {
+    --bg-geral: #e4e4e4;
+
+    --bg-navbar: grey;
+    --botao-navbar: #2cbb2c;
+    --botao-navbar-ativo: #dadfda;
+
+}
+
+body {
+    margin-top: 0;
+    margin-bottom: 0;
+
+    background-color: var(--bg-geral);
+}

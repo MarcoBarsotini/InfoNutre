@@ -1,0 +1,13 @@
+.navbar{
+    top: 0;
+    background-color: var(--bg-navbar);
+}
+
+.botao_header {
+    border-radius: 8;
+    background-color: var(--botao-navbar);
+}
+.botao_header:hover {
+    border-radius: 8;
+    background-color: var(--botao-navbar-ativo);
+}

@@ -1,0 +1,12 @@
+.rodape {
+    width: 100%;
+
+    background-color: rgb(158, 158, 158);
+}
+
+.texto-rodape {
+    top: 10px;
+    bottom: 20px;
+
+    font-size: 14x;
+}
