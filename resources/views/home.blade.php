@@ -18,9 +18,15 @@
 </head>
 <body>
 
+<!-- Começo do Header -->
+    <div class="header">
+        <a> InfoNutre </a>
+    </div>
+<!-- Fim do Header -->
+
 <!-- Começo do Body -->
     <nav class="navbar">
-        <h1> aaaa</h1>
+        <a> InfoNutre </a>
     </nav>
 
     <p> Olá </p>
@@ -30,11 +36,9 @@
 
 <!-- Começo do Rodapé --> 
 
-    <section>
-        <div class="rodape">
-            <p> AAA </p>
-        </div>
-    </section>
+    <div class="rodape">
+        <p class="textos"> © 2022 Copyright by <a class="link_rodape" href="#">InfoNutre</a> - Todos os direitos reservados.</p>
+    </div>
 
 <!-- Fim do Rodapé --> 
 

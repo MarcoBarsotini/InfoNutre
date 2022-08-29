@@ -1,15 +1,51 @@
 :root {
     --bg-geral: #e4e4e4;
 
-    --bg-navbar: grey;
+    /* Cor do Header */
+    --gb-header: #202225;
     --botao-navbar: #2cbb2c;
     --botao-navbar-ativo: #dadfda;
 
+    /* Cor da ScrollBar */
+    --bg-scrollbar: #1a1a33;
+    --cor-bar: #B00C24;
+
+    /* Cor do Rodapé */
+    --bg-rodape: #36393F;
+    --text-rodape: #b9b9bd;
+
+}
+
+html {
+    height: 100%;
+    padding: 0;
+    margin: 0;
 }
 
 body {
-    margin-top: 0;
-    margin-bottom: 0;
+    margin: 0;
+    padding: 0;
 
     background-color: var(--bg-geral);
 }
+
+/* Estilização da ScrollBar */
+  *::-webkit-scrollbar {
+      width: 12px;
+    }
+    
+    *::-webkit-scrollbar-track {
+      background: var(--bg-scrollbar);
+    }
+    
+    *::-webkit-scrollbar-thumb {
+      background-color: var(--cor-bar);
+      border-radius: 10px;
+      border: 3px solid var(--bg-scrollbar);
+    }
+
+    * {      /* Este elemento é apenas para o Firefox */
+      scrollbar-width: thin;
+      scrollbar-color: #B00C24 #1a1a33;
+    }
+/* Fim da ScrollBar */
