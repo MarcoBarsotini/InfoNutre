@@ -44,7 +44,10 @@
 
         .botao {
             padding: 2%;
+
             background-color: orange;
+            border-radius: 6px;
+
             font-size: 14px!important;
             text-decoration: none;
         }
