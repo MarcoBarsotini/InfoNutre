@@ -7,11 +7,6 @@
     <title>500 | Server Error</title>
 </head>
 <body>
-
-    <div class="box">
-        <a> ola </a>
-    </div>
-
     <style>
 
         html {
@@ -20,30 +15,12 @@
             margin: 0;
         }
 
-        .box {
-            display: flex;
-            align-content: flex-end;
-            
-            margin: 10px;
-            margin-top: 5%;
-            margin-left: 70%;
-            margin-right: 10%;
-
-        }
-
-        .titulos {
-            font-size: 15px;
-            
-        }
-
         body {
             background-color: white;
             background-image: url("/images/svg/errors/500_server_error.svg");
             background-repeat: no-repeat;
             background-position: 5% 35%; 
         }
-        
-
     </style>
     
 </body>
