@@ -13,21 +13,17 @@
 
     <!-- Fim dos arquivos CSS -->
 
-
     <title>InfoNutre - Home</title>
 </head>
 <body>
 
 <!-- Começo do Header -->
-    <div class="header">
-        <a> InfoNutre </a>
-    </div>
+    <nav class="navbar">
+        <p> Opa </p>
+    </nav>
 <!-- Fim do Header -->
 
 <!-- Começo do Body -->
-    <nav class="navbar">
-        <a> InfoNutre </a>
-    </nav>
 
     <p> Olá </p>
 
@@ -42,5 +38,6 @@
 
 <!-- Fim do Rodapé --> 
 
+    <script type="text/javascript" src="{{ asset('js/homejs/home.js') }}"></script>
 </body>
 </html>
