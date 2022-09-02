@@ -8,10 +8,17 @@
 </head>
 <body>
 
-    <div class="box"> 
-        <h1> Opa! Parece que você se perdeu... </h1>
-        <a class="botao" alt="Botão Voltar" href="/"> Home </a>
-    </div>
+    <section>
+        <div class="texto"> 
+            <h1> Oops! Parece que você se perdeu... </h1>
+            <span> Essa página não existe. <br> Se você considerar que isto é um erro, por favor <a href="#"> Nos Avise </a>  </span>
+        </div>
+
+        <div class="botao_container">
+            <a class="botao" alt="Botão Voltar" href="/"> Voltar para o Início </a>
+        </div>
+    </section>
+
 
     <style>
 
@@ -28,27 +35,63 @@
             background-position: 5% 35%; 
         }
 
-        .box {
+        .texto {
             margin-left: 55%;
-            margin-top: 8%;
+            margin-top: 15%;
             align-itens: center;
             align content: center;
         }
 
-        .box h1 {
-            font-size: 30px;
+        .texto h1 {
+            font-size: 33px;
             font-family: Arial, Helvetica, sans-serif;
             border-size: 1px!important;
             border-color: orange;
+            color: #7070c7;
+        }
+
+        .texto span {
+            font-size: 17px;
+            color: #7070c7;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 17px;
+        }
+        a:visited {
+            text-decoration: none;
+        }
+        a:active {
+            color: blue;
+        }
+
+        .botao_container {
+            margin-top: 5%;
+            margin-left: 55%;
         }
 
         .botao {
             padding: 2%;
+            margin: 1%;
+            font-family: Arial, Helvetica, sans-serif;
 
-            background-color: orange;
+            font-size: 14px;
+            color: white;
+            background-color: #3e6ed6;
+            border-color: orange;
+            border-width: 1px;
             border-radius: 6px;
 
             font-size: 14px!important;
+            text-decoration: none;
+        }
+        .botao:hover {
+            background-color: #375ecc;
+        }
+        .botao:visited {
             text-decoration: none;
         }
     </style>
