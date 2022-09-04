@@ -19,7 +19,7 @@
             background-color: white;
             background-image: url("/images/svg/errors/500_server_error.svg");
             background-repeat: no-repeat;
-            background-position: 5% 35%; 
+            background-position: 50%; 
         }
     </style>
     
