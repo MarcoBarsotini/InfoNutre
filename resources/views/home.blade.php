@@ -13,21 +13,31 @@
 
     <!-- Fim dos arquivos CSS -->
 
-    <title>InfoNutre - Home</title>
+    <title>Infonutre - Home</title>
 </head>
 <body>
 
 <!-- Começo do Header -->
-    <nav class="navbar">
-        <p> Opa </p>
-    </nav>
+    <header class="header">
+        <img class="logo" src="{{ asset('images/logo_in.png') }}"href=".page-top"/>
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+            <li><a href="#" class="link link-theme link-arrow">HOME</a></li>
+            <li><a href="#" class="link link-theme link-arrow">Cardápio</a></li>
+            <li><a href="#" class="link link-theme link-arrow">Sobre nós</a></li>
+            <li><a href="login" class="link link-theme link-arrow">Login</a></li>
+        </ul>
+    </header>
 <!-- Fim do Header -->
 
 <!-- Começo do Body -->
 
-    <p> Olá </p>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 <!-- Fim do Body -->
+
+<!-- Botão de Rolagem -->
 
 
 <!-- Começo do Rodapé --> 
@@ -38,6 +48,6 @@
 
 <!-- Fim do Rodapé --> 
 
-    <script type="text/javascript" src="{{ asset('js/homejs/home.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/homejs/main.js') }}"></script>
 </body>
 </html>
