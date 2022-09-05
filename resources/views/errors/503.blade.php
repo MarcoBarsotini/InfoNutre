@@ -47,12 +47,12 @@
             font-family: Arial, Helvetica, sans-serif;
             border-size: 1px!important;
             border-color: orange;
-            color: #7070c7;
+            color: #407BFF;
         }
 
         .texto span {
             font-size: 17px;
-            color: #7070c7;
+            color: #407BFF;
             font-family: Arial, Helvetica, sans-serif;
 
         }
@@ -80,7 +80,7 @@
 
             font-size: 14px;
             color: white;
-            background-color: #3e6ed6;
+            background-color: #407BFF;
             border-color: orange;
             border-width: 1px;
             border-radius: 6px;
@@ -89,7 +89,7 @@
             text-decoration: none;
         }
         .botao:hover {
-            background-color: #375ecc;
+            background-color: #407BFF;
         }
         .botao:visited {
             text-decoration: none;
