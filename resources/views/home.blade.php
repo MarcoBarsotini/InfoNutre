@@ -13,7 +13,7 @@
 
     <!-- Fim dos arquivos CSS -->
 
-    <title>Infonutre - Home</title>
+    <title>InfoNutre | Home</title>
 </head>
 <body>
 
