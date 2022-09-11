@@ -14,28 +14,18 @@
     <div class="container" id="container">
         <div class="form-container sign-up-container">
             <form action="#">
-                <h1>Criar Conta</h1>
-                <div class="social-container">
-                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-                <span>ou use suas informações</span>
-                <input type="text" placeholder="Nome" />
-                <input type="email" placeholder="Email" />
-                <input type="password" placeholder="Senha" />
-                <button>Registrar</button>
+                <h1>Poxa Vida!</h1>
+                <br> <br>
+                <span> Aparentemente nosso Servidor está em manutenção no momento e não é possível criar uma conta :( </span>
             </form>
         </div>
         <div class="form-container sign-in-container">
             <form action="#">
                 <h1>Entrar</h1>
-                <div class="social-container">
-                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                <div class="espacamento">
+                    <span>É bom ver você de novo!</span>
                 </div>
-                <span>Ou use sua conta</span>
+                
                 <input type="email" placeholder="Email" />
                 <input type="password" placeholder="Senha" />
                 <a href="#">Esqueceu a senha?</a>

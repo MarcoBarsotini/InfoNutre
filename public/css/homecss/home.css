@@ -26,5 +26,21 @@
 .link_rodape:hover {
   color: #de2a25;
 }
-
 /* Fim do Rodapé */
+
+/* Cards de Comida */
+
+.cards {
+  padding: 15px;
+  display: flex;
+  flex-flow: row;
+}
+
+.item {
+  background-color: rgb(79, 177, 177);
+  margin: 5px;
+  
+}
+
+/* Fim dos Cards */
+

@@ -37,11 +37,14 @@
 
 <!-- Começo do Body -->
 
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br>
     <section id="cardapio"> 
-        
+        <div class="cards">
+            <div class="item"> Coca </div>
+            <div class="item"> Coxinha </div>
+            <div class="item"> Coxinha </div>
+        </div>
     </section>
-
 <!-- Fim do Body -->
 
 <!-- Botão de Rolagem -->

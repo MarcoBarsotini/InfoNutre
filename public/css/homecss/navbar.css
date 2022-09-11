@@ -164,11 +164,9 @@
 .header {
   background-color: #fff;
   position: fixed;
-  width: 80%;
+  width: 100%;
   z-index: 3;
-  margin-left: 10%;
-  margin-right: 10%;
-  padding: 20px 0;
+  padding: 10px 0;
 }
 
 .header ul {
@@ -183,6 +181,7 @@
   display: block;
   padding: 20px 20px 4px 20px;
   text-decoration: none;
+  margin-right: 14px;
 }
 
 .header li a:hover,
@@ -194,7 +193,8 @@
   display: block;
   float: left;
   text-decoration: none;
-  width: 5%;
+  margin-left: 30px;
+  width: 3%;
 }
 
 /* menu */
@@ -335,7 +335,8 @@
 /* 48em = 768px */
 
 @media (min-width: 48em) {
-  .section-split a {
-    width: 50%;
+    .section-split a {
+      width: 50%;
+    }
   }
 }
