@@ -11,6 +11,8 @@
         <link rel="stylesheet" type="text/css" href="{{ asset('css/homecss/home.css') }}">
         <link rel="stylesheet" type="text/css" href="{{ asset('css/homecss/navbar.css') }}">
 
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
     <!-- Fim dos arquivos CSS -->
 
     <title>InfoNutre | Home</title>
@@ -47,7 +49,9 @@
                     </div>
                     <img src="{{ asset('images/food/coxinha.png') }}"/>
                     <div>
-                        <span>Coxinha feita com massa de mandioca e muito óleo?</span>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCoxinha">
+                        Teste
+                    </button>
                     </div>
                 </div>
                 <div class="item"> Coca </div>
@@ -57,30 +61,23 @@
     </section>
 <!-- Fim do Body -->
 
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ExemploModalCentralizado">
-  Abrir modal de demonstração
-</button>
-
-<!-- Modal -->
-<div class="modal fade" id="ExemploModalCentralizado" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="TituloModalCentralizado">Título do modal</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-        <button type="button" class="btn btn-primary">Salvar mudanças</button>
-      </div>
+<!-- Modal dos alimentos -->
+    <div class="modal fade" id="modalCoxinha" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Coxinha de Frango</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            Um delicioso salgado tradicional do Brasil! Com massa crocante e com recheio de frango com catupiry
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        </div>
+        </div>
     </div>
-  </div>
-</div>
+    </div>
 
 <!-- Botão de Rolagem -->
 
@@ -94,5 +91,6 @@
 <!-- Fim do Rodapé --> 
 
     <script type="text/javascript" src="{{ asset('js/homejs/home.js') }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
 </html>
