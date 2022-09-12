@@ -46,8 +46,9 @@
                 <img src="{{ asset('images/food/coxinha.png') }}" class="card-img-top" alt="Foto de uma Coxinha de Frango">
             <div class="card-body">
                 <h5 class="card-title">Coxinha de Frango</h5>
-                <p class="card-text">Um delicioso salgado, recheado com Frango e Catupiry</p>
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCoxinha"> Abrir informações </button>
+                <p class="card-text">Um delicioso salgado, recheado com Frango e Catupiry.</p>
+                <button type="button" class="btn btn-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#modalCoxinha"> Informações </button>
+                <button type="button" class="btn btn-primary btn-sm">Comprar</button>
             </div>
         </div>
         </div>
@@ -59,14 +60,14 @@
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Coxinha de Frango</h5>
+                    <h5 class="modal-title" id="exampleModalLabel"><b>Coxinha de Frango</b></h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
             <div class="modal-body">
                 Um delicioso salgado tradicional do Brasil! Com massa crocante e com recheio de frango e uma generosa camada de catupiry. <br> <br>
                 <b> Valores calóricos: </b> <br>
                 - 274 kcal; <br>
-                - 11,9 g de gordura <br> <br>
+                - 11,9 g de gordura; <br> <br>
                 <span> <b>Atenção! os valores podem variar, esta é apenas uma média.</b></span>
 
             </div>
