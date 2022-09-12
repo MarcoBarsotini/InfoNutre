@@ -39,13 +39,48 @@
 
     <br><br><br><br><br><br><br><br><br><br>
     <section id="cardapio"> 
-        <div class="cards">
-            <div class="item"> Coca </div>
-            <div class="item"> Coxinha </div>
-            <div class="item"> Coxinha </div>
+        <div class="container_cards">
+            <div class="cards">
+                <div class="item"> 
+                    <div>
+                        <a> Coxinha de Frango </a>
+                    </div>
+                    <img src="{{ asset('images/food/coxinha.png') }}"/>
+                    <div>
+                        <span>Coxinha feita com massa de mandioca e muito óleo?</span>
+                    </div>
+                </div>
+                <div class="item"> Coca </div>
+                <div class="item"> Pão </div>
+            </div>
         </div>
     </section>
 <!-- Fim do Body -->
+
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ExemploModalCentralizado">
+  Abrir modal de demonstração
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="ExemploModalCentralizado" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="TituloModalCentralizado">Título do modal</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+        <button type="button" class="btn btn-primary">Salvar mudanças</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- Botão de Rolagem -->
 

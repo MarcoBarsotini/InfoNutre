@@ -30,16 +30,43 @@
 
 /* Cards de Comida */
 
+.container_cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .cards {
+  align-content: center;
   padding: 15px;
   display: flex;
   flex-flow: row;
+  max-width: 400px;
+  max-height: 400px;
 }
 
 .item {
   background-color: rgb(79, 177, 177);
-  margin: 5px;
+  padding: 20px;
+  margin: 20px;
+  transition: all 0.3s ease-out;
+  justify-content: center;
+}
+.item:hover {
+  transform: translateY(-5px);
+  cursor: pointer;
   
+}
+
+.item img {
+  width: 200px;
+}
+
+.item a {
+  color: white;
+  margin-top: 10px;
+  padding: 20px;
+  font-size: 15px;
 }
 
 /* Fim dos Cards */
