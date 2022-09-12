@@ -42,41 +42,39 @@
     <br><br><br><br><br><br><br><br><br><br>
     <section id="cardapio"> 
         <div class="container_cards">
-            <div class="cards">
-                <div class="item"> 
-                    <div>
-                        <a> Coxinha de Frango </a>
-                    </div>
-                    <img src="{{ asset('images/food/coxinha.png') }}"/>
-                    <div>
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCoxinha">
-                        Teste
-                    </button>
-                    </div>
-                </div>
-                <div class="item"> Coca </div>
-                <div class="item"> Pão </div>
+            <div class="card" style="width: 18rem;">
+                <img src="{{ asset('images/food/coxinha.png') }}" class="card-img-top" alt="Foto de uma Coxinha de Frango">
+            <div class="card-body">
+                <h5 class="card-title">Coxinha de Frango</h5>
+                <p class="card-text">Um delicioso salgado, recheado com Frango e Catupiry</p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCoxinha"> Abrir informações </button>
             </div>
+        </div>
         </div>
     </section>
 <!-- Fim do Body -->
 
 <!-- Modal dos alimentos -->
     <div class="modal fade" id="modalCoxinha" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-        <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Coxinha de Frango</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Coxinha de Frango</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+            <div class="modal-body">
+                Um delicioso salgado tradicional do Brasil! Com massa crocante e com recheio de frango e uma generosa camada de catupiry. <br> <br>
+                <b> Valores calóricos: </b> <br>
+                - 274 kcal; <br>
+                - 11,9 g de gordura <br> <br>
+                <span> <b>Atenção! os valores podem variar, esta é apenas uma média.</b></span>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+            </div>
+            </div>
         </div>
-        <div class="modal-body">
-            Um delicioso salgado tradicional do Brasil! Com massa crocante e com recheio de frango com catupiry
-        </div>
-        <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-        </div>
-        </div>
-    </div>
     </div>
 
 <!-- Botão de Rolagem -->

@@ -69,5 +69,11 @@
   font-size: 15px;
 }
 
+/* Algumas alterações do Bootstrap */
+
+.modal-body span {
+  font-size: 13px;
+}
+
 /* Fim dos Cards */
 
