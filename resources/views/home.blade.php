@@ -21,7 +21,6 @@
 
 <!-- Navbar -->
     <header class="header">
-        <img class="logo" src="{{ asset('images/logo_in.png') }}"href=".page-top"/>
             <input class="menu-btn" type="checkbox" id="menu-btn" />
             <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
         <ul class="menu">
@@ -43,6 +42,7 @@
         </div>
     </section>
     
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     <section id="cardapio"> 
             <div class="container_cards">
                 <div class="card" style="width: 18rem;">

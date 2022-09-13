@@ -189,14 +189,6 @@
   background-color: #fff;
 }
 
-.header .logo {
-  display: block;
-  float: left;
-  text-decoration: none;
-  margin-left: 30px;
-  width: 3%;
-}
-
 /* menu */
 
 .header .menu {
