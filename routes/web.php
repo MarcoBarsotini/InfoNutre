@@ -20,3 +20,11 @@ Route::get('/', function () {
 Route::get('/login', function () {
     return view('login');
 });
+
+Route::get('/503', function () {
+    return view('errors/503');
+});
+
+Route::get('/504', function () {
+    return view('errors/504');
+});
