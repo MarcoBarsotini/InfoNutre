@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <title>404 | Not Found</title>
 </head>
 <body>
@@ -15,7 +16,7 @@
         </div>
 
         <div class="botao_container">
-            <a class="botao" alt="Botão Voltar" href="/"> Voltar para o Início </a>
+            <a class="btn btn-primary shadow-lg" alt="Botão Voltar" href="/"> Voltar para o Início </a>
         </div>
     </section>
 
@@ -96,5 +97,7 @@
         }
     </style>
     
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
 </body>
 </html>

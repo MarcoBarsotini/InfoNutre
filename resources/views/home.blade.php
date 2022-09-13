@@ -19,7 +19,7 @@
 </head>
 <body>
 
-<!-- Começo do Header -->
+<!-- Navbar -->
     <header class="header">
         <img class="logo" src="{{ asset('images/logo_in.png') }}"href=".page-top"/>
             <input class="menu-btn" type="checkbox" id="menu-btn" />
@@ -31,15 +31,18 @@
             <li><a href="login" class="link link-theme link-arrow">Login</a></li>
         </ul>
     </header>
-
-    <div class="scroll-up-btn">
-        <i class="fas fa-angle-up"></i>
-    </div>
-<!-- Fim do Header -->
+<!-- Fim da Navbar -->
 
 <!-- Começo do Body -->
 
-    <br><br><br><br><br><br><br><br><br><br>
+    <section class="home" id="home">
+        <div class="max-width">
+            <div class="home-content">
+                <p> Teste </p>
+            </div>
+        </div>
+    </section>
+    
     <section id="cardapio"> 
             <div class="container_cards">
                 <div class="card" style="width: 18rem;">

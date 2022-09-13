@@ -10,7 +10,7 @@
     --botao-navbar-ativo: #dadfda;
 
     /* Cor da ScrollBar */
-    --bg-scrollbar: #1a1a33;
+    --bg-scrollbar: #363636;
     --cor-bar: #B00C24;
 
     /* Cor do Rodapé */
@@ -65,7 +65,7 @@ body {
       border: 3px solid var(--bg-scrollbar);
     }
 
-    * {      /* Este elemento é apenas para o Firefox */
+    * {      /* Isto é apenas para o Firefox */
       scrollbar-width: thin;
       scrollbar-color: #de2a25 #1a1a33;
     }
