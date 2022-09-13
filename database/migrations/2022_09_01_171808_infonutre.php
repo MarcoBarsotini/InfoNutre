@@ -15,11 +15,12 @@ return new class extends Migration
     {
         Schema::create('infonutre_data', function (Blueprint $table) {
             $table->id();
+            $table->string('nome_usuario')->unique();
             $table->string('email')->unique();
-            $table->string('nome_usuario');
             $table->string('password');
             $table->timestamp('criado_em')->nullable();
             $table->integer('coins');
+
         });
     }
 
