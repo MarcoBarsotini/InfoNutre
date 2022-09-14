@@ -20,7 +20,7 @@
 <body>
 
 <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg p-3 bg-info sticky-sm-top" id="headerNav">
+    <nav class="navbar navbar-expand-lg p-3 bg-danger bg-gradient sticky-sm-top" id="headerNav">
         <div class="container-fluid">
             <a class="navbar-brand d-block d-lg-none" href="#home">
                 <img src="{{ asset('images/logo_in.png') }}" height="60" />
