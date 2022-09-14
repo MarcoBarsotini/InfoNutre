@@ -21,6 +21,10 @@ Route::get('/login', function () {
     return view('login');
 });
 
+Route::get('/contato', function () {
+    return view('contato');
+});
+
 Route::get('/503', function () {
     return view('errors/503');
 });

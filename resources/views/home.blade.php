@@ -20,16 +20,43 @@
 <body>
 
 <!-- Navbar -->
-    <header class="header">
-            <input class="menu-btn" type="checkbox" id="menu-btn" />
-            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-        <ul class="menu">
-            <li><a href="#" class="link link-theme link-arrow">HOME</a></li>
-            <li><a href="#cardapio" class="link link-theme link-arrow">Cardápio</a></li>
-            <li><a href="#" class="link link-theme link-arrow">Sobre nós</a></li>
-            <li><a href="login" class="link link-theme link-arrow">Login</a></li>
-        </ul>
-    </header>
+    <nav class="navbar navbar-expand-lg navbar-light p-3 bg-light sticky-sm-top" id="headerNav">
+        <div class="container-fluid">
+            <a class="navbar-brand d-block d-lg-none" href="#home">
+                <img src="{{ asset('images/logo_in.png') }}" height="60" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class=" collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav mx-auto ">
+                    <li class="nav-item">
+                    <a class="nav-link mx-2  fw-semibold" aria-current="page" href="#cardapio">Cardápio</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link mx-2 fw-semibold" href="#">Carrinho</a>
+                    </li>
+                    <li class="nav-item d-none d-lg-block">
+                    <a class="nav-link mx-2" href="#">
+                        <img src="{{ asset('images/logo_in.png') }}" height="50" />
+                    </a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link mx-2 fw-semibold" href="/login">Login</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                    <a class="nav-link mx-2 dropdown-toggle fw-semibold" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Company
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item fw-bold" href="/contato">Suporte Online</a></li>
+                        <li><a class="dropdown-item " href="#">Nossa Equipe</a></li>
+                    </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 <!-- Fim da Navbar -->
 
 <!-- Começo do Body -->
@@ -37,7 +64,7 @@
     <section class="home" id="home">
         <div class="max-width">
             <div class="home-content">
-                <p> Teste </p>
+                
             </div>
         </div>
     </section>
