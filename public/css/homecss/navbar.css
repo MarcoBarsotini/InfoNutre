@@ -8,6 +8,15 @@
   font-family: Montserrat;
 }
 
+.navbar a {
+  color: white;
+  font-family: Montserrat;
+}
+
+
+.gb-blue {
+  background-color: #9dd6f4;
+}
 
 /* Responsividade */
 

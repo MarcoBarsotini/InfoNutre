@@ -45,3 +45,5 @@ $cell.find('.js-collapser').click(function() {
   $cell.not($thisCell).removeClass('is-inactive');
 
 });
+
+
