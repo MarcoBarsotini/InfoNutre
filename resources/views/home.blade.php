@@ -20,7 +20,7 @@
 <body>
 
 <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light p-3 bg-light sticky-sm-top" id="headerNav">
+    <nav class="navbar navbar-expand-lg p-3 bg-info sticky-sm-top" id="headerNav">
         <div class="container-fluid">
             <a class="navbar-brand d-block d-lg-none" href="#home">
                 <img src="{{ asset('images/logo_in.png') }}" height="60" />
@@ -46,11 +46,11 @@
                     </li>
                     <li class="nav-item dropdown">
                     <a class="nav-link mx-2 dropdown-toggle fw-semibold" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Company
+                        Mais
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <li><a class="dropdown-item fw-bold" href="/contato">Suporte Online</a></li>
-                        <li><a class="dropdown-item " href="#">Nossa Equipe</a></li>
+                        <li><a class="dropdown-item text-secondary fw-bold" href="/contato">Suporte Online</a></li>
+                        <li><a class="dropdown-item text-secondary " href="/equipe">Nossa Equipe</a></li>
                     </ul>
                     </li>
                 </ul>
@@ -64,12 +64,12 @@
     <section class="home" id="home">
         <div class="max-width">
             <div class="home-content">
-                
+
             </div>
         </div>
     </section>
     
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     <section id="cardapio"> 
             <div class="container_cards">
                 <div class="card" style="width: 18rem;">

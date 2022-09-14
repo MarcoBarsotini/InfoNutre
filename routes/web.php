@@ -25,6 +25,10 @@ Route::get('/contato', function () {
     return view('contato');
 });
 
+Route::get('/equipe', function () {
+    return view('equipe');
+});
+
 Route::get('/503', function () {
     return view('errors/503');
 });
