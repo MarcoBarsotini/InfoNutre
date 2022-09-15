@@ -20,7 +20,7 @@
 <body>
 
 <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg p-3 bg-danger bg-gradient sticky-sm-top" id="headerNav">
+    <nav class="navbar navbar-expand-lg p-3 bg-danger sticky-sm-top" id="headerNav">
         <div class="container-fluid">
             <a class="navbar-brand d-block d-lg-none" href="/">
                 <img src="{{ asset('images/logo_in.png') }}" height="60" />
@@ -71,11 +71,11 @@
 
     <section class="container border border-opacity-50 rounded-3">
         <div class="item">
-            <img src="{{ asset('images/svg/home/pedidos.svg') }}"/>
+            <img src="{{ asset('images/home/delivery.png') }}"/>
         </div>
         <div class="item">
             <h1 class="fw-semibold fs-1"> Rápido e Eficiente </h1>
-            <p> Cansado de pegar filas e ficar esperando sua vez chegar? <br> Com nosso sistema integrado, é possível comprar seus produtos antecipadamente</p>
+            <p> Cansado de pegar filas e ficar esperando sua vez chegar? <br> Com nosso sistema integrado, é possível comprar seus produtos com antecedência.</p>
         </div>
     </section>
     

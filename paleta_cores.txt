@@ -1,7 +1,7 @@
 Cores da logo InfoNutre:
 
 Vermelho: #de2a25
-Azul escuro: #284860
+Amarelo: #ffd600
 Azul claro: #9dd6f4
 Marrom: #d59045
 Cinza: #edeef1
