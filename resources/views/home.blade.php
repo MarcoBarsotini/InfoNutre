@@ -22,7 +22,7 @@
 <!-- Navbar -->
     <nav class="navbar navbar-expand-lg p-3 bg-danger bg-gradient sticky-sm-top" id="headerNav">
         <div class="container-fluid">
-            <a class="navbar-brand d-block d-lg-none" href="#home">
+            <a class="navbar-brand d-block d-lg-none" href="/">
                 <img src="{{ asset('images/logo_in.png') }}" height="60" />
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,7 +37,7 @@
                     <a class="nav-link mx-2 fw-semibold" href="#">Carrinho</a>
                     </li>
                     <li class="nav-item d-none d-lg-block">
-                    <a class="nav-link mx-2" href="#">
+                    <a class="nav-link mx-2" href="/">
                         <img src="{{ asset('images/logo_in.png') }}" height="50" />
                     </a>
                     </li>
@@ -68,8 +68,19 @@
             </div>
         </div>
     </section>
+
+    <section class="container border border-opacity-50 rounded-3">
+        <div class="item">
+            <img src="{{ asset('images/svg/home/pedidos.svg') }}"/>
+        </div>
+        <div class="item">
+            <h1 class="fw-semibold fs-1"> Rápido e Eficiente </h1>
+            <p> Cansado de pegar filas e ficar esperando sua vez chegar? <br> Com nosso sistema integrado, é possível comprar seus produtos antecipadamente</p>
+        </div>
+    </section>
     
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    
+    
     <section id="cardapio"> 
             <div class="container_cards">
                 <div class="card" style="width: 18rem;">
@@ -127,7 +138,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
             <div class="modal-body">
-                Está com sede, e vontade de beber algo para se refrescar? Sem problemas, uma coquinha gelada sempre resolve tudo. <br> <br>
+                Está com sede e vontade de beber algo para se refrescar? Sem problemas, uma coquinha gelada sempre resolve tudo. <br> <br>
                 <b> Valores calóricos: </b> <br>
                 - 60 kcal; <br>
                 - 15g Carboidratos; <br>

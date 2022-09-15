@@ -20,7 +20,7 @@
 <body>
 
 <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg p-3 bg-info sticky-sm-top" id="headerNav">
+    <nav class="navbar navbar-expand-lg p-3 bg-danger bg-gradient sticky-sm-top" id="headerNav">
         <div class="container-fluid">
             <a class="navbar-brand d-block d-lg-none" href="/">
                 <img src="{{ asset('images/logo_in.png') }}" height="60" />
@@ -37,7 +37,7 @@
                     <a class="nav-link mx-2 fw-semibold" href="#">Carrinho</a>
                     </li>
                     <li class="nav-item d-none d-lg-block">
-                    <a class="nav-link mx-2" href="#">
+                    <a class="nav-link mx-2" href="/">
                         <img src="{{ asset('images/logo_in.png') }}" height="50" />
                     </a>
                     </li>
