@@ -25,6 +25,10 @@ Route::get('/contato', function () {
     return view('contato');
 });
 
+Route::get('/cardapio', function () {
+    return view('cardapio');
+});
+
 Route::get('/equipe', function () {
     return view('equipe');
 });
