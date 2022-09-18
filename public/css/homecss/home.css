@@ -114,6 +114,10 @@
   background-color: #be131c;
 }
 
+.navbar-nav > li > a:hover {
+  color: #7dcaf3;
+}
+
 /* Fim dos Cards */
 
 
