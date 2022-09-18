@@ -12,7 +12,11 @@
         <link rel="stylesheet" type="text/css" href="{{ asset('css/homecss/navbar.css') }}">
         <!-- Bootstrap Conection -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet"/>
+        <!-- MDB -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.css" rel="stylesheet"/>
     <!-- Fim dos arquivos CSS -->
 
     <title>InfoNutre | Home</title>
@@ -31,7 +35,7 @@
             <div class=" collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav mx-auto ">
                     <li class="nav-item">
-                    <a class="nav-link mx-2  fw-semibold" aria-current="page" href="#cardapio">Cardápio</a>
+                    <a class="nav-link mx-2  fw-semibold" aria-current="page" href="/cardapio">Cardápio</a>
                     </li>
                     <li class="nav-item">
                     <a class="nav-link mx-2 fw-semibold" href="#">Carrinho</a>
@@ -89,84 +93,94 @@
         </div>
     </section>
     
-    
-    
-    <section id="cardapio"> 
-            <div class="container_cards">
-                <div class="card" style="width: 18rem;">
-                    <img src="{{ asset('images/food/coxinha.png') }}" class="card-img-top" alt="Foto de uma Coxinha de Frango">
-                <div class="card-body">
-                    <h5 class="card-title"><b>Coxinha de Frango <br> R$5,00</h5></b>
-                    <p class="card-text">Um delicioso salgado, recheado com Frango e Catupiry.</p>
-                    <button type="button" class="btn btn-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#modalCoxinha"> Informações </button>
-                    <button type="button" class="btn btn-primary btn-sm">Comprar</button>
+
+    <!-- Carrosel de Depoimentos -->
+    <hr class="hr" />
+    <div id="carouselExampleControls" class="carousel slide text-center carousel-dark" data-mdb-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="rounded-circle shadow-1-strong mb-4"
+                    src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(10).webp" alt="avatar"
+                    style="width: 150px;" />
+                <div class="row d-flex justify-content-center">
+                    <div class="col-lg-8">
+                    <h5 class="mb-3">Marco Barsotini</h5>
+                    <p>Cliente</p>
+                    <p class="text-muted">
+                        <i class="fas fa-quote-left pe-2"></i>
+                        Simplesmente incrível. Era uma zona esse tanto de fila que enfrentavamos no começo, mas depois do novo sistema de compras, eu posso Simplesmente
+                        comprar a comida, retirar em minutos e ir embora.
+                    </p>
+                    </div>
+                </div>
+                <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+                    <li><i class="fas fa-star fa-sm"></i></li>
+                    <li><i class="fas fa-star fa-sm"></i></li>
+                    <li><i class="fas fa-star fa-sm"></i></li>
+                    <li><i class="fas fa-star fa-sm"></i></li>
+                    <li><i class="far fa-star fa-sm"></i></li>
+                </ul>
+            </div>
+            <div class="carousel-item">
+                <img class="rounded-circle shadow-1-strong mb-4"
+                    src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(32).webp" alt="avatar"
+                    style="width: 150px;" />
+                <div class="row d-flex justify-content-center">
+                    <div class="col-lg-8">
+                    <h5 class="mb-3">John Doe</h5>
+                    <p>Web Developer</p>
+                    <p class="text-muted">
+                        <i class="fas fa-quote-left pe-2"></i>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus et deleniti
+                        nesciunt sint eligendi reprehenderit reiciendis.
+                    </p>
+                    </div>
+                </div>
+                <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+                    <li><i class="fas fa-star fa-sm"></i></li>
+                    <li><i class="fas fa-star fa-sm"></i></li>
+                    <li><i class="fas fa-star fa-sm"></i></li>
+                    <li><i class="fas fa-star fa-sm"></i></li>
+                    <li><i class="far fa-star fa-sm"></i></li>
+                </ul>
+            </div>
+            <div class="carousel-item">
+            <img class="rounded-circle shadow-1-strong mb-4"
+                src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp" alt="avatar" style="width: 150px;" />
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-8">
+                <h5 class="mb-3">Anna Deynah</h5>
+                <p>UX Designer</p>
+                <p class="text-muted">
+                    <i class="fas fa-quote-left pe-2"></i>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus et deleniti
+                    nesciunt sint eligendi reprehenderit reiciendis, quibusdam illo, beatae quia
+                    fugit consequatur laudantium velit magnam error. Consectetur distinctio fugit
+                    doloremque.
+                </p>
                 </div>
             </div>
-
-            <div class="container_cards">
-                <div class="card" style="width: 18rem;">
-                    <img src="{{ asset('images/food/coca_2l.png') }}" class="card-img-top" alt="Foto de uma Coxinha de Frango">
-                <div class="card-body">
-                    <h5 class="card-title"><b>Coca Cola - 2L <br> R$10,00</h5></b>
-                    <p class="card-text">Garrafa de Coca Cola, 2 Litros não retornável.</p>
-                    <button type="button" class="btn btn-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#modalCoca"> Informações </button>
-                    <button type="button" class="btn btn-primary btn-sm">Comprar</button>
-                </div>
+            <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+                <li><i class="fas fa-star fa-sm"></i></li>
+                <li><i class="fas fa-star fa-sm"></i></li>
+                <li><i class="fas fa-star fa-sm"></i></li>
+                <li><i class="fas fa-star fa-sm"></i></li>
+                <li><i class="far fa-star fa-sm"></i></li>
+            </ul>
             </div>
         </div>
-    </section>
-<!-- Fim do Body -->
-
-<!-- Modal dos alimentos -->
-    <div class="modal fade" id="modalCoxinha" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel"><b>Coxinha de Frango - R$5,00</b></h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-            <div class="modal-body">
-                Um delicioso salgado tradicional do Brasil! Com massa crocante e com recheio de frango e uma generosa camada de catupiry. <br> <br>
-                <b> Valores calóricos: </b> <br>
-                - 274 kcal; <br>
-                - 11,9 g de gordura; <br> <br>
-                <span> <b>Atenção! os valores são apenas uma média.</b></span>
-
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-            </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="modalCoca" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel"><b>Coca 2Litros - R$10,00</b></h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-            <div class="modal-body">
-                Está com sede e vontade de beber algo para se refrescar? Sem problemas, uma coquinha gelada sempre resolve tudo. <br> <br>
-                <b> Valores calóricos: </b> <br>
-                - 60 kcal; <br>
-                - 15g Carboidratos; <br>
-                - 10mg Sódio; <br>
-                - 11,9 g de gordura; <br> <br>
-                <span> <b>Atenção! os valores são apenas uma média.</b></span>
-
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-            </div>
-            </div>
-        </div>
-    </div>
-
-<!-- Botão de Rolagem -->
-
-
+        <button class="carousel-control-prev" type="button" data-mdb-target="#carouselExampleControls"
+            data-mdb-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-mdb-target="#carouselExampleControls"
+            data-mdb-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div> <hr class="hr" />
+<!-- Carousel wrapper -->
 <!-- Começo do Rodapé --> 
 
     <div class="rodape">
@@ -176,7 +190,9 @@
 <!-- Fim do Rodapé --> 
 
     <script type="text/javascript" src="{{ asset('js/homejs/home.js') }}"></script>
+
     <!-- Bootstrap Conection -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.js"></script>
 </body>
 </html>

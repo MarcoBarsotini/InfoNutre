@@ -20,7 +20,7 @@
 <body>
 
 <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg p-3 bg-danger bg-gradient sticky-sm-top" id="headerNav">
+    <nav class="navbar navbar-expand-lg p-3 bg-danger sticky-sm-top" id="headerNav">
         <div class="container-fluid">
             <a class="navbar-brand d-block d-lg-none" href="/">
                 <img src="{{ asset('images/logo_in.png') }}" height="60" />
@@ -31,7 +31,7 @@
             <div class=" collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav mx-auto ">
                     <li class="nav-item">
-                    <a class="nav-link mx-2  fw-semibold" aria-current="page" href="#cardapio">Cardápio</a>
+                    <a class="nav-link mx-2  fw-semibold" aria-current="page" href="/cardapio">Cardápio</a>
                     </li>
                     <li class="nav-item">
                     <a class="nav-link mx-2 fw-semibold" href="#">Carrinho</a>
