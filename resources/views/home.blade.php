@@ -94,7 +94,7 @@
     </section>
     
 
-    <!-- Carrosel de Depoimentos -->
+<!-- Carrosel de Depoimentos -->
     <hr class="hr" />
     <div id="carouselExampleControls" class="carousel slide text-center carousel-dark" data-mdb-ride="carousel">
         <div class="carousel-inner">
@@ -180,7 +180,9 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div> <hr class="hr" />
-<!-- Carousel wrapper -->
+<!-- Carrosel de depoimentos -->
+
+
 <!-- Começo do Rodapé --> 
 
     <div class="rodape">
@@ -189,10 +191,10 @@
 
 <!-- Fim do Rodapé --> 
 
+<!-- Conexões JS -->
     <script type="text/javascript" src="{{ asset('js/homejs/home.js') }}"></script>
-
-    <!-- Bootstrap Conection -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.js"></script>
+<!-- Conexões JS -->
 </body>
 </html>
