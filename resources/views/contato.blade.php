@@ -2,19 +2,18 @@
 
 @section('conteudo_body')
     <link rel="stylesheet" type="text/css" href="{{ asset('css/contatocss/contato.css') }}">
-
     <div class="d-flex justify-content-center align-items-center">
         <div class="escrita">
             <div class="titulo">
                 <h1> Algum problema? </h1>
             </div>
             <div>
-                <span> Ficaremos felizes em te ajudar! </span>
+                <span> Ficaremos felizes em te ajudar! <br> preencha </span>
             </div>
         </div>
         <form>
             <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
+                <label for="email" class="form-label"> Seu Email</label>
                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
             </div>
             <div class="mb-3">
@@ -32,6 +31,10 @@
                 <label class="form-check-label" for="flexRadioDefault2">
                     Sou de uma empresa
                 </label> 
+            </div> <br>
+            <div class="mb-3">
+                <label for="formFileSm" class="form-label">Anexo <b>(Opcional)</b></label>
+                <input class="form-control form-control-sm" id="formFileSm" type="file">
             </div>
             <button type="submit" class="btn btn-primary">Enviar</button>
         </form>
