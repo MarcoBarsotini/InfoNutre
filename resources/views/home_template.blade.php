@@ -31,7 +31,7 @@
             <div class=" collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav mx-auto ">
                     <li class="nav-item">
-                    <a class="nav-link mx-2  fw-semibold" aria-current="page" href="/cardapio">Cardápio</a>
+                    <a class="nav-link mx-2  fw-semibold" aria-current="page" href="#cardapio">Cardápio</a>
                     </li>
                     <li class="nav-item">
                     <a class="nav-link mx-2 fw-semibold" href="#">Carrinho</a>
@@ -68,7 +68,7 @@
 <!-- Começo do Rodapé --> 
 
     <div class="rodape">
-        <p class="textos"> © 2022 Copyright by <a class="link_rodape" href="#">InfoNutre</a> - Todos os direitos reservados.</p>
+        <p class="textos"> © 2022 Copyright by <a class="link_rodape" href="/">InfoNutre</a> - Todos os direitos reservados.</p>
     </div>
 
 <!-- Fim do Rodapé --> 

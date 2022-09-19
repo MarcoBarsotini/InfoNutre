@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Conexão dos arquivos CSS -->
-
         <link rel="stylesheet" type="text/css" href="{{ asset('css/general.css') }}">
         <link rel="stylesheet" type="text/css" href="{{ asset('css/homecss/home.css') }}">
         <link rel="stylesheet" type="text/css" href="{{ asset('css/homecss/navbar.css') }}">
@@ -95,16 +94,14 @@
     
 
 <!-- Carrosel de Depoimentos -->
-    <hr class="hr" />
+    <hr class="hr"/>
     <div id="carouselExampleControls" class="carousel slide text-center carousel-dark" data-mdb-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img class="rounded-circle shadow-1-strong mb-4"
-                    src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(10).webp" alt="avatar"
-                    style="width: 150px;" />
+                
                 <div class="row d-flex justify-content-center">
                     <div class="col-lg-8">
-                    <h5 class="mb-3">Marco Barsotini</h5>
+                    <h3 class="mb-3"><b>Ana Clara</b></h3>
                     <p>Cliente</p>
                     <p class="text-muted">
                         <i class="fas fa-quote-left pe-2"></i>
