@@ -84,7 +84,7 @@
 
     <section class="container border border-opacity-50 rounded-3">
         <div class="item">
-            <h1 class="fw-semibold fs-1"> Rápido e Eficiente </h1>
+            <h1 class="fw-semibold fs-1"> Na sua porta </h1>
             <p> Cansado de pegar filas e ficar esperando sua vez chegar? <br> Com nosso sistema integrado, é possível comprar seus produtos com antecedência.</p>
         </div>
         <div class="item">
@@ -119,9 +119,7 @@
                 </ul>
             </div>
             <div class="carousel-item">
-                <img class="rounded-circle shadow-1-strong mb-4"
-                    src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(32).webp" alt="avatar"
-                    style="width: 150px;" />
+                <img class="rounded-circle shadow-1-strong mb-4" src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(32).webp" alt="avatar" style="width: 150px;" />
                 <div class="row d-flex justify-content-center">
                     <div class="col-lg-8">
                     <h5 class="mb-3">John Doe</h5>
@@ -142,8 +140,7 @@
                 </ul>
             </div>
             <div class="carousel-item">
-            <img class="rounded-circle shadow-1-strong mb-4"
-                src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp" alt="avatar" style="width: 150px;" />
+            <img class="rounded-circle shadow-1-strong mb-4" src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp" alt="avatar" style="width: 150px;" />
             <div class="row d-flex justify-content-center">
                 <div class="col-lg-8">
                 <h5 class="mb-3">Anna Deynah</h5>
