@@ -25,13 +25,12 @@
                 <label class="form-check-label" for="flexRadioDefault1">
                     Sou cliente
                 </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                <label class="form-check-label" for="flexRadioDefault2">
-                    Sou de uma empresa
-                </label> 
-            </div> <br>
+            </div> <br> <br>
+            <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                <option selected>De onde é?</option>
+                <option value="2">Sou um cliente</option>
+                <option value="1">Sou uma Empresa</option>
+            </select> <br>
             <div class="mb-3">
                 <label for="formFileSm" class="form-label">Anexo <b>(Opcional)</b></label>
                 <input class="form-control form-control-sm" id="formFileSm" type="file">
