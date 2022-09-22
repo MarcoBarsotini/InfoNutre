@@ -32,7 +32,7 @@
             <div class=" collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav mx-auto ">
                     <li class="nav-item">
-                    <a class="nav-link mx-2  fw-semibold" aria-current="page" href="/cardapio">Cardápio</a>
+                    <a class="nav-link mx-2  fw-semibold" aria-current="page" href="{{url('/cardapio')}}">Cardápio</a>
                     </li>
                     <li class="nav-item">
                     <a class="nav-link mx-2 fw-semibold" href="#">Carrinho</a>
@@ -43,15 +43,15 @@
                     </a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link mx-2 fw-semibold" href="/login">Login</a>
+                    <a class="nav-link mx-2 fw-semibold" href="{{url('/login')}}">Login</a>
                     </li>
                     <li class="nav-item dropdown">
                     <a class="nav-link mx-2 dropdown-toggle fw-semibold" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Mais
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <li><a class="dropdown-item text-secondary fw-bold" href="/contato">Suporte Online</a></li>
-                        <li><a class="dropdown-item text-secondary " href="/equipe">Nossa Equipe</a></li>
+                        <li><a class="dropdown-item text-secondary fw-bold" href="{{url('/contato')}}">Suporte Online</a></li>
+                        <li><a class="dropdown-item text-secondary " href="{{url('/equipe')}}">Nossa Equipe</a></li>
                     </ul>
                     </li>
                 </ul>
