@@ -48,7 +48,7 @@
                         Mais
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <li><a class="dropdown-item text-secondary fw-bold" href="{{url('/contato')}}">Suporte Online</a></li>
+                        <li><a class="dropdown-item text-secondary fw-bold" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">Contato</a></li>
                         <li><a class="dropdown-item text-secondary " href="{{url('/equipe')}}">Nossa Equipe</a></li>
                     </ul>
                     </li>
@@ -87,6 +87,21 @@
             <img src="{{ asset('images/home/delivery.png') }}"/>
         </div>
     </section>
+
+
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Contato</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div>
+                Tem algum problema ou sugestão? Sinta-se livre para nos enviar uma mensagem!
+            </div>
+            
+        </div>
+    </div>
 
 
 <!-- Começo do Rodapé --> 
