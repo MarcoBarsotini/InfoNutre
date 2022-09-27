@@ -16,7 +16,7 @@ return [
     'reset' => 'Sua senha foi alterada!',
     'sent' => 'Nós enviamos o email para recuperar a senha!',
     'throttled' => 'Por favor, espere para tentar de novo.',
-    'token' => 'This password reset token is invalid.',
+    'token' => 'O token de redefinição expirou!',
     'user' => "Não conseguimos encontrar um email registrado.",
 
 ];

@@ -14,7 +14,7 @@ return [
     */
 
     'failed' => 'Estas credenciais inseridas não são válidas.',
-    'password' => 'A senha iserida é inválida.',
+    'password' => 'A senha inserida está incorreta.',
     'throttle' => 'Muitas tentativas de login. Tente de novo em :seconds segundos.',
 
 ];

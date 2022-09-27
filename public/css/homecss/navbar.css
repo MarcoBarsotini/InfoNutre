@@ -21,6 +21,11 @@
   background-color: #9dd6f4;
 }
 
+.btn-primary {
+  background-color: #9dd6f4 !important ;
+  border-color: #9dd6f4 !important;
+}
+
 /* Responsividade */
 
 @media screen and (min-width:992px){
