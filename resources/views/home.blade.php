@@ -23,7 +23,7 @@
     </section>
     @endauth
 
-    @guest
+
     <section class="container border border-opacity-50 rounded-3">
         <div class="item">
             <h1 class="fw-semibold fs-1"> Na porta da sua casa </h1>
@@ -33,17 +33,36 @@
             <img src="{{ asset('images/home/delivery.png') }}"/>
         </div>
     </section>
-    @endguest
 
 
-    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="contatomodal" aria-labelledby="contatomodal">
         <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="offcanvasExampleLabel">Contato</h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
             <div>
-                Tem algum problema ou sugestão? Sinta-se livre para nos enviar uma mensagem!
+                <form>
+            <div class="mb-3">
+                <label for="email" class="form-label"> Seu Email</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Descreva seu problema / Dúvida</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                <option selected>De onde é?</option>
+                <option value="2">Sou um cliente</option>
+                <option value="1">Sou uma Empresa</option>
+            </select> <br>
+            <div class="mb-3">
+                <label for="formFileSm" class="form-label">Anexo <b>(Opcional)</b></label>
+                <input class="form-control form-control-sm" id="formFileSm" type="file">
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
             </div>
             
         </div>
