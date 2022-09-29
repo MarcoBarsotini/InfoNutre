@@ -1,6 +1,10 @@
-@extends('home_template')
+@extends('layouts.app-master')
 
-@section('conteudo_body')
+@section('titulo')
+    <title> Infonutre | Equipe </title>
+@endsection
+
+@section('content')
 
         <link rel="stylesheet" type="text/css" href="{{ asset('css/equipecss/equipe.css') }}">
 

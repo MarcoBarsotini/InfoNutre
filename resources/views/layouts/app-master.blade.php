@@ -14,7 +14,7 @@
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
     <!-- Fim dos arquivos CSS -->
 
-    <title>InfoNutre | Home</title>
+    @yield('titulo')
 </head>
 <body>
     
@@ -22,7 +22,15 @@
 
     <div>
         @yield('content')
-    </div>    
+    </div> 
+    
+    
+    
+<!-- Começo do Rodapé --> 
+    <div class="rodape">
+        <p class="textos"> © 2022 Copyright by <a class="link_rodape" href="/">InfoNutre</a> - Todos os direitos reservados.</p>
+    </div>
+<!-- Fim do Rodapé --> 
 
     <!-- Conexões JS -->
         <script type="text/javascript" src="{{ asset('js/homejs/home.js') }}"></script>

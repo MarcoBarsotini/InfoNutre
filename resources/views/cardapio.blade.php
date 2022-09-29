@@ -1,6 +1,10 @@
-@extends('home_template')
+@extends('layouts.app-master')
 
-@section('conteudo_body')
+@section('titulo')
+    <title> Infonutre | Cardápio </title>
+@endsection
+
+@section('content')
 <section id="cardapio"> 
             <div class="container_cards">
                 <div class="card" style="width: 18rem;">

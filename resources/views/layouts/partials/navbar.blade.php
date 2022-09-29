@@ -47,7 +47,7 @@
                         Mais
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <li><a class="dropdown-item text-secondary fw-bold" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">Contato</a></li>
+                        <li><a class="dropdown-item text-secondary fw-bold" data-bs-toggle="offcanvas" href="#contatomodal" role="button" aria-controls="contatomodal">Contato</a></li>
                         <li><a class="dropdown-item text-secondary " href="{{url('/equipe')}}">Nossa Equipe</a></li>
                     </ul>
                     </li>

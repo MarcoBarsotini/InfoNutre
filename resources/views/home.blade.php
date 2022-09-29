@@ -1,5 +1,9 @@
 @extends('layouts.app-master')
 
+@section('titulo')
+    <title> Infonutre | Home </title>
+@endsection
+
 @section('content')
 <!-- Começo do Body -->
     
@@ -10,6 +14,7 @@
             </div>
         </div>
     </section>
+
 
     @auth
     <section class="container border border-opacity-50 rounded-3">
