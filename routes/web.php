@@ -32,10 +32,6 @@ Route::group(['namespace' => 'App\Http\Controllers'], function()
     });
 });
 
-Route::get('/contato', function () {
-    return view('contato');
-});
-
 Route::get('/cardapio', function () {
     return view('cardapio');
 });

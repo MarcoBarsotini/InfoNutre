@@ -128,3 +128,7 @@
 .dropdown-menu a {
   background-color: white;
 }
+
+.offcanvas-body img {
+  width: 75%;
+}
