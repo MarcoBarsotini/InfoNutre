@@ -1,4 +1,4 @@
-@extends('layouts.app-master')
+@extends('layouts.home_template')
 
 @section('titulo')
     <title> Infonutre | Equipe </title>

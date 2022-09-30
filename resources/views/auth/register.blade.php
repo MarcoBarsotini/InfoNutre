@@ -1,4 +1,9 @@
-@extends('layouts.auth-master')
+@extends('layouts.auth_template')
+
+@section('titulo')
+    <title> Infonutre | Registrar </title>
+@endsection
+
 
 @section('content')
     <form method="post" action="{{ route('register.perform') }}">

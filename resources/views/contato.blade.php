@@ -1,4 +1,4 @@
-@extends('home_template')
+@extends('layouts.home_template')
 
 @section('conteudo_body')
     <link rel="stylesheet" type="text/css" href="{{ asset('css/contatocss/contato.css') }}">

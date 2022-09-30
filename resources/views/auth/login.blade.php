@@ -1,4 +1,8 @@
-@extends('layouts.auth-master')
+@extends('layouts.auth_template')
+
+@section('titulo')
+    <title> Infonutre | Login </title>
+@endsection
 
 @section('content')
 
