@@ -1,5 +1,10 @@
 @extends('layouts.carrinho_template')
 
+@section('titulo')
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/carrinhocss/products.css') }}">
+    <title> Infonutre | cardápio </title>
+@endsection
+
 @section('content')
     <div class="container px-6 mx-auto">
         <h3 class="text-2xl font-medium text-gray-700">Lista de Produtos</h3>
@@ -18,9 +23,9 @@
                         <input type="hidden" value="{{ $product->id }}" name="id">
                         <input type="hidden" value="{{ $product->name }}" name="name">
                         <input type="hidden" value="{{ $product->price }}" name="price">
-                        <input type="hidden" value="{{ $product->image }}"  name="image">
+                        <input type="hidden" value="{{ $product->image }}" class="foto_produto"  name="image">
                         <input type="hidden" value="1" name="quantity">
-                        <button class="px-4 py-2 text-white bg-blue rounded">Adicionar ao Carrinho</button>
+                        <button class="btn btn-danger">Adicionar ao Carrinho</button> <br><br><br><br>
                     </form>
                 </div>
                 

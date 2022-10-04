@@ -1,5 +1,8 @@
 @extends('layouts.carrinho_template')
 
+@section('titulo')
+    <title> Infonutre | Carrinho </title>
+@endsection
 
 @section('content')
     <main class="my-8">
