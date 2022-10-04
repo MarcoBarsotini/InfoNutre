@@ -1,0 +1,28 @@
+html {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+html body {
+    margin: 0;
+    padding: 0;
+    background-color: #232323 !important;
+}
+
+.formulario {
+    margin-top: 5%;
+    max-width: 20%;
+}
+
+.formulario img {
+    width: 80%;
+    margin-top: 0px;
+    margin-bottom: 40px;
+}
+
+span {
+    color: white;
+    font-size: 12px;
+}

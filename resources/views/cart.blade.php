@@ -6,7 +6,7 @@
 
 @section('content')
     <main class="my-8">
-      <div class="container px-6 mx-auto">
+      <div class="container">
           <div class="flex justify-center my-6">
               <div class="flex flex-col w-full p-8 text-gray-800 bg-white shadow-lg pin-r pin-y md:w-4/5 lg:w-4/5">
                 @if ($message = Session::get('success'))
@@ -14,7 +14,8 @@
                         <p class="text-green-800">{{ $message }}</p>
                     </div>
                 @endif
-                  <h3 class="text-3xl text-bold">Seu Carrinho</h3>
+                
+                <h3 class="text-3xl text-bold">Seu Carrinho</h3>
                 <div class="flex-1">
                   <table class="w-full text-sm lg:text-base" cellspacing="0">
                     <thead>
@@ -79,7 +80,7 @@
                   <div>
                     <form action="{{ route('cart.clear') }}" method="POST">
                       @csrf
-                      <button class="px-6 py-2 text-red-800 bg-red-300">Remover Tudo</button>
+                      <button class="btn btn-danger">Remover Tudo</button>
                     </form>
                   </div>
 

@@ -1,13 +1,11 @@
 @extends('layouts.auth_template')
 
 @section('titulo')
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/authcss/login.css') }}">
     <title> Infonutre | Login </title>
 @endsection
 
 @section('content')
-
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/logincss/main.css') }}">
-
     <div class="d-flex justify-content-center">
         <div class="formulario">
             <form method="post" action="{{ route('login.perform') }}">

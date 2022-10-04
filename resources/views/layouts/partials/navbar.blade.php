@@ -1,4 +1,6 @@
 <!-- Navbar -->
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/homecss/navbar.css') }}">
+
     <nav class="navbar navbar-expand-lg p-3 bg-danger sticky-sm-top" id="headerNav">
         <div class="container-fluid">
             <a class="navbar-brand d-block d-lg-none" href="/">
@@ -10,37 +12,20 @@
             <div class=" collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav mx-auto ">
                     <li class="nav-item">
-                    <a class="nav-link mx-2  fw-semibold" aria-current="page" href="{{url('/cardapio')}}">Cardápio</a>
+                        <a class="nav-link mx-2  fw-semibold" aria-current="page" href="{{url('/cardapio')}}">Cardápio</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link mx-2 fw-semibold" href="{{url('/cart')}}">Carrinho</a>
+                        <a class="nav-link mx-2 fw-semibold" href="{{url('/cart')}}">Carrinho</a>
                     </li>
                     <li class="nav-item d-none d-lg-block">
-                    <a class="nav-link mx-2" href="/">
-                        <img src="{{ asset('images/logo_in.png') }}" height="50" />
-                    </a>
+                        <a class="nav-link mx-2" href="/">
+                            <img src="{{ asset('images/logo_in.png') }}" height="50" />
+                        </a>
                     </li>
-                    <li class="nav-item dropdown">
-                    <a class="nav-link mx-2 dropdown-toggle fw-semibold" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Perfil
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <li> <a>
-                            @auth
-                                <div class="text-center">
-                                    <a class=" dropdown-item text-secondary fw-bold" href="{{ route('logout.perform') }}" class="btn btn-outline-light me-2">Sair</a>
-                                </div>
-                            @endauth
-                        </a></li>
-                        <li> <a>
-                        @guest
-                            <div class="text-center">
-                                <a href="{{ route('login.perform') }}" class="btn btn-outline-light me-2 dropdown-item text-secondary fw-bold">Fazer Login</a>
-                                <a href="{{ route('register.perform') }}" class="btn btn-primary">Criar Conta</a>
-                            </div>
-                        @endguest
-                        </a></li>
-                    </ul>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2 fw-semibold" href="" data-bs-toggle="offcanvas" data-bs-target="#abaperfil" aria-controls="abaperfil">Perfil</a>
+                    </li>
+
                     </li>
                     <li class="nav-item dropdown">
                     <a class="nav-link mx-2 dropdown-toggle fw-semibold" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -55,4 +40,35 @@
             </div>
         </div>
     </nav>
+
+        
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="abaperfil" aria-labelledby="abaperfil">
+                <div class="offcanvas-header">
+                @auth
+                    <h5 class="offcanvas-title" id="offcanvasRightLabel"> Bem vindo(a), <b>{{auth()->user()->username}} </b> ! </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body"><br> <hr> <br>
+                    <div class="imagem_perfil d-flex justify-content-center">
+                        <img src="{{ asset('images/default_profile.png') }}" alt="Foto Default de Perfil"/>
+                    </div><br>
+                    <div class="email_usuario d-flex justify-content-center">
+                        <br><br>
+                        <span> <b>{{auth()->user()->email}}</b> </span>
+                    </div>
+                    <div class="email_usuario d-flex justify-content-center">
+                        <span> Saldo em Conta: <b>R${{auth()->user()->coins}}</b> </span>
+                    </div><br>
+                    <div class="d-flex justify-content-center">
+                        <a href="{{ route('logout.perform') }}" class="btn btn-outline-danger text-center">Deslogar</a>
+                    </div>
+                @endauth
+                @guest
+                    <div class="d-flex justify-content-center">
+                        <a href="{{ route('login.perform') }}" class="btn btn-outline-light me-2">Entrar</a>
+                        <a href="{{ route('register.perform') }}" class="btn btn-danger">Cadastrar</a>
+                    </div>
+                @endguest
+                </div>
+            </div>
 <!-- Fim da Navbar -->

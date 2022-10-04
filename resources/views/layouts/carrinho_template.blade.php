@@ -19,15 +19,13 @@
 </head>
 <body>
 
+      @include('layouts.partials.navbar')
+
       <div>
-         @include('layouts.partials.navbar')
-
-         <div>
-            @yield('content')
-         </div>
-
-         @include('layouts.partials.rodape')
+         @yield('content')
       </div>
+      
+      @include('layouts.partials.rodape')
 
    <!-- Conexões JS -->
       <script type="text/javascript" src="{{ asset('js/homejs/home.js') }}"></script>

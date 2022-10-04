@@ -22,6 +22,15 @@
   border-color: #1190d4 !important;
 }
 
+.imagem_perfil img {
+  width: 40%;
+}
+
+.email_usuario span {
+  font-size: 17px;
+  color: #e2d8d8;
+}
+
 /* Responsividade */
 
 @media screen and (min-width:992px){
