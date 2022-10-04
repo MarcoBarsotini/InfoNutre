@@ -13,7 +13,7 @@
                     <a class="nav-link mx-2  fw-semibold" aria-current="page" href="{{url('/cardapio')}}">Cardápio</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link mx-2 fw-semibold" href="#">Carrinho</a>
+                    <a class="nav-link mx-2 fw-semibold" href="{{url('/cart')}}">Carrinho</a>
                     </li>
                     <li class="nav-item d-none d-lg-block">
                     <a class="nav-link mx-2" href="/">
