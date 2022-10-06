@@ -46,7 +46,7 @@
                 
                     <div class="offcanvas-header">
                     <h5 class="offcanvas-title" id="offcanvasRightLabel"> Bem vindo(a), <b>{{auth()->user()->username}} </b> ! </h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body"><br> <hr> <br>
                     <div class="imagem_perfil d-flex justify-content-center">
@@ -56,6 +56,9 @@
                         <br><br>
                         <span> <b>{{auth()->user()->email}}</b> </span>
                     </div>
+                    <div class="d-flex justify-content-center">
+                        <span> Membro desde: {{auth()->user()->created_at}}</span>
+                    </div><br>
                     <div class="email_usuario d-flex justify-content-center">
                         <span> Saldo em Conta: <b>R${{auth()->user()->coins}}</b> </span>
                     </div><br>

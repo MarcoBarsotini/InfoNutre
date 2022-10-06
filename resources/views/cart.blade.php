@@ -1,10 +1,14 @@
 @extends('layouts.carrinho_template')
 
 @section('titulo')
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/carrinhocss/cart.css') }}">
     <title> Infonutre | Carrinho </title>
 @endsection
 
 @section('content')
+
+<!-- Seção de usuários que estão Logados -->
+  @auth
     <main class="my-8">
       <div class="container">
           <div class="flex justify-center my-6">
@@ -89,4 +93,21 @@
             </div>
       </div>
   </main>
-    @endsection
+  @endauth
+
+
+<!-- Seção de usuários não Logados -->
+  @guest
+
+    <div class="d-flex justify-content-center">
+
+      <div>
+
+        <h1 class="titulo_guest"> Você deve estar logado para ver seu carrinho! </h1>
+        
+      </div>
+
+    </div>
+
+  @endguest
+@endsection
