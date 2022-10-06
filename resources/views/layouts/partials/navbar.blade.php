@@ -41,10 +41,10 @@
         </div>
     </nav>
 
-        
+        @auth
             <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="abaperfil" aria-labelledby="abaperfil">
-                <div class="offcanvas-header">
-                @auth
+                
+                    <div class="offcanvas-header">
                     <h5 class="offcanvas-title" id="offcanvasRightLabel"> Bem vindo(a), <b>{{auth()->user()->username}} </b> ! </h5>
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
@@ -62,13 +62,35 @@
                     <div class="d-flex justify-content-center">
                         <a href="{{ route('logout.perform') }}" class="btn btn-outline-danger text-center">Deslogar</a>
                     </div>
-                @endauth
-                @guest
-                    <div class="d-flex justify-content-center">
-                        <a href="{{ route('login.perform') }}" class="btn btn-outline-light me-2">Entrar</a>
-                        <a href="{{ route('register.perform') }}" class="btn btn-danger">Cadastrar</a>
-                    </div>
-                @endguest
                 </div>
             </div>
+        @endauth
+
+
+        @guest
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="abaperfil" aria-labelledby="abaperfil">
+                    
+                    <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasRightLabel"> Perfil </b> ! </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body"><br> <hr> <br>
+                    <div class="imagem_perfil d-flex justify-content-center">
+                        <img src="{{ asset('images/default_profile.png') }}" alt="Foto Default de Perfil"/>
+                    </div><br>
+                    <div class="email_usuario d-flex justify-content-center">
+                        <br><br>
+                        <span>  </span>
+                    </div>
+                    <div class="email_usuario d-flex justify-content-center">
+                        <span>Oops, Parece que você não tá logado :( </span> <br>
+                    </div><br>
+                    <div class="d-flex justify-content-center">
+                        <a href="{{ route('login.perform') }}" class="btn btn-outline-light me-2">Entrar</a>
+                        <a href="{{ route('register.perform') }}" class="btn btn-danger">Criar Conta</a>
+                    </div>
+
+                </div>
+            </div>
+        @endguest
 <!-- Fim da Navbar -->

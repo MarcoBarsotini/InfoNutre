@@ -27,7 +27,6 @@
                           <span class="hidden lg:inline">Quantidade</span>
                         </th>
                         <th class="hidden text-right md:table-cell"> Preço</th>
-                        <th class="btn btn-danger"> Remover </th>
                       </tr>
                     </thead>
                     <tbody>
