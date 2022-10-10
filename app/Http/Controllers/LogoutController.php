@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Session;
 class LogoutController extends Controller
 {
     /**
-     * Log out account user.
+     * Realiza o Logout
      *
      * @return \Illuminate\Routing\Redirector
      */

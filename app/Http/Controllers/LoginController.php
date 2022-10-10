@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Auth;
 class LoginController extends Controller
 {
     /**
-     * Display login page.
+     * Mostra a tela de login
      * 
      * @return Renderable
      */
@@ -19,7 +19,7 @@ class LoginController extends Controller
     }
 
     /**
-     * Handle account login request
+     * Recebe a requisição de Login
      * 
      * @param LoginRequest $request
      * 
@@ -42,7 +42,7 @@ class LoginController extends Controller
     }
 
     /**
-     * Handle response after user authenticated
+     * Recebe o status do Request de login
      * 
      * @param Request $request
      * @param Auth $user

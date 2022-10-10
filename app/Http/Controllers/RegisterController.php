@@ -9,7 +9,7 @@ use App\Http\Requests\RegisterRequest;
 class RegisterController extends Controller
 {
     /**
-     * Display register page.
+     * Mostra a página de Registro
      * 
      * @return \Illuminate\Http\Response
      */
@@ -19,7 +19,7 @@ class RegisterController extends Controller
     }
 
     /**
-     * Handle account registration request
+     * Recebe o request de Login
      * 
      * @param RegisterRequest $request
      * 

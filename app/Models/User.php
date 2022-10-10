@@ -13,7 +13,7 @@ class User extends Authenticatable
     use HasApiTokens, HasFactory, Notifiable;
 
     /**
-     * The attributes that are mass assignable.
+     * Define os campos que podem ser preenchidos.
      *
      * @var array<int, string>
      */
@@ -25,7 +25,7 @@ class User extends Authenticatable
     ];
 
     /**
-     * Always encrypt the password when it is updated.
+     * Faz a criptografia da senha.
      *
      * @param $value
      * @return string
