@@ -5,27 +5,40 @@ Readme do Projeto InfoNutre.
 
 ## Abrindo o projeto
 
-Clone o projeto
+1- Clone o projeto
 
 ```bash
   git clone https://github.com/MarcoBarsotini/InfoNutre.git
 ```
 
-Instale as dependências do composer
+2- Instale as dependências do composer
 
 ```bash
   composer update
 ```
 
-Inicie o servidor
+3- Migre as tabelas ao MySql
+
+```bash
+  php artisan migrate
+```
+
+4- Popule as tabelas
+
+```bash
+  php artisan db:seed --class=ProductSeeder
+```
+
+5- Inicie o servidor
 
 ```bash
   php artisan serve
 ```
 
 
-## Links para download
+## Links Úteis
 
  - [Composer](https://getcomposer.org/download/)
  - [Laravel 9x](https://laravel.com/docs/9.x)
+ - [SQL Workbench](https://dev.mysql.com/downloads/workbench/)
 
