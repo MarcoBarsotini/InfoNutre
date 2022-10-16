@@ -1,4 +1,4 @@
-@extends('layouts.auth_template')
+@extends('layouts.register_template')
 
 @section('titulo')
 <link rel="stylesheet" type="text/css" href="{{ asset('css/authcss/register.css') }}">

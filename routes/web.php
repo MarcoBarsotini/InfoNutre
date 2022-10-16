@@ -52,6 +52,10 @@ Route::get('/equipe', function () {
     return view('equipe');
 });
 
+Route::get('/perfil', function () {
+    return view('profile');
+});
+
 Route::get('/503', function () {
     return view('errors/503');
 });

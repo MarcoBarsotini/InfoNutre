@@ -1,4 +1,4 @@
-@extends('layouts.auth_template')
+@extends('layouts.login_template')
 
 @section('titulo')
     <link rel="stylesheet" type="text/css" href="{{ asset('css/authcss/login.css') }}">
@@ -6,35 +6,62 @@
 @endsection
 
 @section('content')
-    <div class="d-flex justify-content-center">
-        <div class="formulario">
-            <form method="post" action="{{ route('login.perform') }}">
-                
-                <input type="hidden" name="_token" value="{{ csrf_token() }}" />
-                
-                <img src="{{ asset('images/logo_in.png') }}"/> 
 
-                @include('layouts.partials.messages')
+    <script type="text/javascript" src="{{ asset('js/authjs/login.js') }}"></script>
 
-                <div class="form-group form-floating mb-3">
-                    <input type="text" class="form-control" name="username" value="{{ old('username') }}" placeholder="Username" required="required" autofocus>
-                    <label for="floatingName">Email ou Usuário </label>
-                    @if ($errors->has('username'))
-                        <span class="text-danger text-left">{{ $errors->first('username') }}</span>
-                    @endif
+    <div id="wrapper">
+		<div id="left">
+            <div id="signin">
+                <div class="logo">
+                    <img src="{{ asset('images/logo_in.png') }}" href="#"/>
                 </div>
-                
-                <div class="form-group form-floating mb-3">
-                    <input type="password" class="form-control" name="password" value="{{ old('password') }}" placeholder="Password" required="required">
-                    <label for="floatingPassword">Senha</label>
-                    @if ($errors->has('password'))
-                        <span class="text-danger text-left">{{ $errors->first('password') }}</span>
-                    @endif
-                </div>
+                <form method="post" action="{{ route('login.perform') }}">
+                    
+                    <input type="hidden" name="_token" value="{{ csrf_token() }}" />
 
-                <button class="w-100 btn btn-lg btn-danger" type="submit">Entrar</button>
-                
-            </form>
-        </div>
-    </div>
+                    @include('layouts.partials.messages')
+
+                    <div>
+                        <label>E-mail</label>
+                        <input type="text" class="text-input" name="username" value="{{ old('username') }}" placeholder="" required="required" autofocus>
+                        @if ($errors->has('username'))
+                            <span class="text-danger text-left">{{ $errors->first('username') }}</span>
+                        @endif
+                    </div>
+                    
+                    <div>
+                        <label>Senha</label>
+                        <input type="password" class="text-input" name="password" value="{{ old('password') }}" placeholder="" required="required">
+                        @if ($errors->has('password'))
+                            <span class="text-danger text-left">{{ $errors->first('password') }}</span>
+                        @endif
+                    </div>
+
+                    <button type="submit" class="primary-btn">Acessar</button>
+                </form>
+
+                <div class="links">
+                    <a href="#">Esqueceu sua senha?</a>
+                </div>
+                <div class="or">
+                    <hr class="bar"/>
+                    <span>OU</span>
+                    <hr class="bar"/>
+                </div>
+                <a href="{{url('/register')}}" class="secondary-btn">Crie sua conta</a>
+		    </div>
+		</div>
+		<div id="right">
+		  <div id="showcase">
+			<div class="showcase-content">
+			  <h1 class="showcase-text">
+                <h1><stronger>Revolucione seu Controle</stronger></h1>
+                <hr>
+                <h3>Bem-vindo a InfoNutre</h3>
+                <span>Uma maneira simples e prática de matar sua fome. <br> É novo aqui? Fique a vontade para criar sua conta, é de graça!</span>
+			  </h1>
+			</div>
+		  </div>
+		</div>
+	</div>
 @endsection
