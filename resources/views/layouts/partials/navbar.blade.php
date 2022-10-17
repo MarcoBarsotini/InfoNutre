@@ -25,7 +25,6 @@
                     <li class="nav-item">
                         <a class="nav-link mx-2 fw-semibold" href="" data-bs-toggle="offcanvas" data-bs-target="#abaperfil" aria-controls="abaperfil">Perfil</a>
                     </li>
-
                     </li>
                     <li class="nav-item dropdown">
                     <a class="nav-link mx-2 dropdown-toggle fw-semibold" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -56,7 +55,7 @@
                         <br><br>
                         <span> <b>{{auth()->user()->email}}</b> </span>
                     </div>
-                    <div class="d-flex justify-content-center">
+                    <div class="membro d-flex justify-content-center">
                         <span> Membro desde: {{auth()->user()->created_at}}</span>
                     </div><br>
                     <div class="email_usuario d-flex justify-content-center">

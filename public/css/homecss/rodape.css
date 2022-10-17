@@ -1,0 +1,28 @@
+/* Começo do Rodapé */
+.rodape {
+    background-color: var(--bg-rodape);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+.textos {
+    color: var(--text-rodape);
+    font: 16px;
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.link_rodape {
+  font: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  color: white;
+}
+.link_rodape:hover {
+  color: #de2a25;
+}
+/* Fim do Rodapé */

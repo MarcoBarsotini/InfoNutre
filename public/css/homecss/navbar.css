@@ -31,6 +31,10 @@
   color: #e2d8d8;
 }
 
+.membro span {
+  font-size: 13px;
+}
+
 /* Responsividade */
 
 @media screen and (min-width:992px){

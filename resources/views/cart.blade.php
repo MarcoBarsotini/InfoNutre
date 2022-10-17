@@ -9,25 +9,23 @@
 
 <!-- Seção de usuários que estão Logados -->
   @auth
-    <main class="my-8">
-      <div class="container">
+      <div class="container-md pt-3">
           <div class="flex justify-center my-6">
               <div class="flex flex-col w-full p-8 text-gray-800 bg-white shadow-lg pin-r pin-y md:w-4/5 lg:w-4/5">
                 @if ($message = Session::get('success'))
-                    <div class="p-4 mb-3 bg-green-400 rounded">
+                    <div class="alert alert-danger text-center" role="alert">
                         <p class="text-green-800">{{ $message }}</p>
                     </div>
                 @endif
-                
-                <h3 class="text-3xl text-bold">Seu Carrinho</h3>
-                <div class="flex-1">
+                <br>
+                <h3 class="text-bold text-center"> <b>Seu Carrinho</b> </h3> 
+                <div><br><br><hr> 
                   <table class="w-full text-sm lg:text-base" cellspacing="0">
                     <thead>
                       <tr class="h-12 uppercase">
                         <th class="hidden md:table-cell"></th>
                         <th class="text-left">Nome</th>
                         <th class="pl-5 text-left lg:text-right lg:pl-0">
-                          <span class="lg:hidden" title="Quantity">Qtd</span>
                           <span class="hidden lg:inline">Quantidade</span>
                         </th>
                         <th class="hidden text-right md:table-cell"> Preço</th>
@@ -36,14 +34,15 @@
                     <tbody>
                         @foreach ($cartItems as $item)
                       <tr>
+                        <td>
+                          <h5 href="#">
+                            
+                          </h5>
+                        </td>
                         <td class="hidden pb-4 md:table-cell">
                           <a href="#">
-                            <img src="{{ $item->attributes->image }}" class="w-20 rounded" alt="Thumbnail">
-                          </a>
-                        </td>
-                        <td>
-                          <a href="#">
-                            <p class="mb-2 md:ml-4">{{ $item->name }}</p>
+                            <p> {{ $item->name }} </p>
+                            <img src="{{ $item->attributes->image }}" class="rounded imagem_produto" alt="Imagem Produto">
                           </a>
                         </td>
                         <td class="justify-center mt-6 md:justify-end md:flex">
@@ -54,7 +53,7 @@
                                 @csrf
                                 <input type="hidden" name="id" value="{{ $item->id}}" >
                               <input type="number" name="quantity" value="{{ $item->quantity }}" 
-                              class="w-6 text-center bg-gray-300" />
+                                class="w-6 text-center bg-gray-300" />
                               <button type="submit" class="btn btn-warning">Atualizar</button>
                               </form>
                             </div>
@@ -69,30 +68,32 @@
                           <form action="{{ route('cart.remove') }}" method="POST">
                             @csrf
                             <input type="hidden" value="{{ $item->id }}" name="id">
-                            <button class="px-4 py-2 text-white bg-red-600">x</button>
-                        </form>
-                          
+                            <button class="btn btn-danger">x</button>
+                        </form>   
                         </td>
                       </tr>
                       @endforeach
                     </tbody>
                   </table>
-                  <div>
-                    Total: ${{ Cart::getTotal() }}
+                  <hr>
+                  <div class="d-flex justify-content-center">
+                    <h4> <b>Total: ${{ Cart::getTotal() }},00</b> </h4>
                   </div>
-                  <div>
+                  <div class="d-flex justify-content-evenly">
                     <form action="{{ route('cart.clear') }}" method="POST">
                       @csrf
                       <button class="btn btn-danger">Remover Tudo</button>
                     </form>
-                  </div>
-
-
+                  <div class="d-flex justify-content-evenly">
+                    <form action="{{ route('cart.confirm') }}" method="POST">
+                      @csrf
+                      <button class="btn btn-success">Concluir o Pedido</button>
+                    </form>
+                  </div></div><br>
                 </div>
               </div>
             </div>
       </div>
-  </main>
   @endauth
 
 

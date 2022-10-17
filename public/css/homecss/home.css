@@ -58,36 +58,6 @@
 /* Conteúdo da Home */
 
 
-/* Começo do Rodapé */
-
-.rodape {
-    background-color: var(--bg-rodape);
-    position: absolute;
-    width: 100%;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 0;
-}
-
-.textos {
-    color: var(--text-rodape);
-    font: 16px;
-    margin-top: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.link_rodape {
-  font: 16px;
-  font-family: Arial, Helvetica, sans-serif;
-  text-decoration: none;
-  color: white;
-}
-.link_rodape:hover {
-  color: #de2a25;
-}
-/* Fim do Rodapé */
-
-
 /* Cards de Comida */
 
 .container_cards {

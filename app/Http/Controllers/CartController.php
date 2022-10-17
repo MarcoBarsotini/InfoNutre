@@ -62,4 +62,13 @@ class CartController extends Controller
 
         return redirect()->route('cart.list');
     }
+
+    public function confirmarCart()
+    {
+        \Cart::clear();
+
+        session()->flash('success', 'Seu pedido está sendo processado!');
+
+        return redirect()->route('cart.list');
+    }
 }
