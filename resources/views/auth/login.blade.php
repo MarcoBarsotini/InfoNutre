@@ -55,10 +55,9 @@
 		  <div id="showcase">
 			<div class="showcase-content">
 			  <h1 class="showcase-text">
-                <h1><stronger>Revolucione seu Controle</stronger></h1>
+                <h1><stronger>Bem-vindo a InfoNutre</stronger></h1>
                 <hr>
-                <h3>Bem-vindo a InfoNutre</h3>
-                <span>Uma maneira simples e prática de matar sua fome. <br> É novo aqui? Fique a vontade para criar sua conta, é de graça!</span>
+                <h3>Uma maneira simples e prática de matar sua fome. <br> É novo aqui? Fique a vontade para criar sua conta, é de graça!</h3>
 			  </h1>
 			</div>
 		  </div>
