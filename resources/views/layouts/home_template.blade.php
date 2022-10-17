@@ -24,8 +24,9 @@
         @yield('content')
     </div> 
     
-    @include('layouts.partials.rodape')
-
+    <footer>
+        @include('layouts.partials.rodape')
+    </footer>
 
     <!-- Conexões JS -->
         <script type="text/javascript" src="{{ asset('js/homejs/home.js') }}"></script>

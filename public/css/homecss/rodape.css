@@ -1,11 +1,9 @@
 /* Começo do Rodapé */
 .rodape {
     background-color: var(--bg-rodape);
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
+    margin-top: 30px;
     color: white;
+    height: 30px;
     text-align: center;
 }
 
@@ -22,6 +20,7 @@
   text-decoration: none;
   color: white;
 }
+
 .link_rodape:hover {
   color: #de2a25;
 }

@@ -1,0 +1,9 @@
+
+
+composer update
+
+composer require "darryldecode/cart"
+
+php artisan migrate
+
+php artisan db:seed --class=ProductSeeder

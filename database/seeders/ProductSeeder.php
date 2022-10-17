@@ -22,9 +22,15 @@ class ProductSeeder extends Seeder
         ]);
         Product::create([
             'name' => 'Coca Cola',
-            'price' => 100,
+            'price' => 10,
             'description' => 'Refrigerante',
             'image' => 'images/food/coca_2l.png'
+        ]);
+        Product::create([
+            'name' => 'Enroladinho de Salsicha',
+            'price' => 10,
+            'description' => 'Salgado',
+            'image' => 'images/food/salsicha.png'
         ]);
     }
 }
