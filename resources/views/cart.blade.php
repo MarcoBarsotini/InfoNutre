@@ -99,20 +99,19 @@
 
 <!-- Seção de usuários não Logados -->
   @guest
-
     <div class="d-flex justify-content-center container border">
       <div>
 
         <h1 class="text-dark titulo_guest text-center"> Você deve estar logado para ver seu carrinho! </h1>
 
         <div class="d-flex justify-content-evenly">
-          <button type="button" href="{{url('/login')}}" class="btn btn-primary">Entrar</button>
-          <button type="button" href="{{url('/register')}}" class="btn btn-danger">Criar Conta</button>
+          <a type="button" href="{{url('/login')}}" class="btn btn-primary">Entrar</a>
+          <a type="button" href="{{url('/register')}}" class="btn btn-danger">Criar Conta</a>
         </div><br>
 
       </div>
     </div>
-    
-
   @endguest
+<!-- Seção de usuários não Logados -->
+
 @endsection
