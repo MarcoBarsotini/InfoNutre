@@ -32,5 +32,11 @@ class ProductSeeder extends Seeder
             'description' => 'Salgado',
             'image' => 'images/food/salsicha.png'
         ]);
+        Product::create([
+            'name' => 'Pepsi 350ml',
+            'price' => 4,
+            'description' => 'Refrigerante',
+            'image' => 'images/food/pepsi.png'
+        ]);
     }
 }

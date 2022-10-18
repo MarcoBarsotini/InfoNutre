@@ -6,7 +6,7 @@
 @endsection
 
 @section('content')
-    <div class="container pt-3">
+    <div class="container-sm pt-3">
         <div class="">
             @foreach ($products as $product)
             <div class="d-flex justify-content-center container border border-2 rounded">
