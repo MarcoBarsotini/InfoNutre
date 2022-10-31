@@ -2,14 +2,20 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 
 class CartController extends Controller
 {
     public function cartList()
     {
-        $cartItems = \Cart::getContent();
-        return view('cart', compact('cartItems'));
+        if (Auth::check()) {
+            $cartItems = \Cart::getContent();
+            return view('cart', compact('cartItems'));
+        }
+        else {
+            return redirect()->route('login.show');
+        }
     }
 
 

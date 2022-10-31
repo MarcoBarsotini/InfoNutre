@@ -3,19 +3,6 @@
     font-size: white;
 }
 
-.titulo_guest {
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: 50px;
-    color: #1b1b1b;
-    font-size: 25px;
-}
-.subtitulo {
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: 30px;
-    color: #2b2b2b;
-    font-size: 25px;
-}
-
 .imagem_produto {
     width: 60%;
 }
