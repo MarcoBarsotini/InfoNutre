@@ -61,7 +61,7 @@
                         </td>
                         <td class="hidden text-right md:table-cell">
                           <span class="text-sm font-medium lg:text-base">
-                              ${{ $item->price }}
+                              R${{ $item->price }},00
                           </span>
                         </td>
                         <td class="hidden text-right md:table-cell">
@@ -69,7 +69,7 @@
                             @csrf
                             <input type="hidden" value="{{ $item->id }}" name="id">
                             <button class="btn btn-danger">x</button>
-                        </form>   
+                        </form>
                         </td>
                       </tr>
                       @endforeach
@@ -77,7 +77,7 @@
                   </table>
                   <hr>
                   <div class="d-flex justify-content-center">
-                    <h4> <b>Total: ${{ Cart::getTotal() }},00</b> </h4>
+                    <h4> <b>Total: R${{ Cart::getTotal() }},00</b> </h4>
                   </div>
                   <div class="d-flex justify-content-evenly">
                     <form action="{{ route('cart.clear') }}" method="POST">

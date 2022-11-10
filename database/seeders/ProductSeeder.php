@@ -28,7 +28,7 @@ class ProductSeeder extends Seeder
         ]);
         Product::create([
             'name' => 'Enroladinho de Salsicha',
-            'price' => 10,
+            'price' => 5,
             'description' => 'Salgado',
             'image' => 'images/food/salsicha.png'
         ]);
