@@ -1,28 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
 html {
     height: 100%;
-    padding: 0;
-    margin: 0;
-    scroll-behavior: smooth;
+  }
+
+body {
+    font-family: 'Cairo', sans-serif;
+    font-weight: 300;
+    color: #fff;
+    margin: 0px;
+    overflow:hidden;
+    background: linear-gradient(#0a446d, #2a4051);
 }
 
-html body {
-    margin: 0;
-    padding: 0;
-    background-color: #232323 !important;
+.mid {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    height: 625px;
+    padding: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    transform: translate(-50%, -50%);
+    background: rgba(0,0,0,.3);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 15px;
 }
 
-.formulario {
-    margin-top: 5%;
-    max-width: 20%;
+.signin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    width: 200px;
 }
 
 .formulario img {
-    width: 80%;
-    margin-top: 0px;
-    margin-bottom: 40px;
+    width: 66%;
+    margin-top: 70px;
 }
 
-span {
-    color: white;
-    font-size: 12px;
+.signin .logo img {
+    width: 95%;
+    align-items: center;
+}
+
+.formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 50%;
+}
+
+.formulario .form-control {
+    width: 100%;
+    height: 45%;
+    border-radius: 5px;
+    background: #fff;
+    border: 1px solid #555;
+    color: black;
+    padding: 0.5rem 1rem;
+    line-height: 1.3rem;
+    margin-bottom: 5px;
+}
+
+.formulario .primary-btn {
+    width: 100%;
+}
+
+.primary-btn {
+    padding: 0.7rem 1rem;
+    height: 2.7rem;
+    display: block;
+    border: 0;
+    border-radius: 5px;
+    font-weight: 500;
+    background: #b52432;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.5s;
+    margin-top: 25px;
+}
+
+.primary-btn:hover {
+    background-color: #4568b8;
+}
+
+.secondary-btn {
+    padding: 3px 40px;
+    display: block;
+    border: 1px solid #f4f4f4;
+    border-radius: 5px;
+    font-weight: 500;
+    background: none;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.5s;
+}
+
+.secondary-btn:hover {
+    border-color: #b52432;
+    color: #b52432;
+}
+
+.signin .or {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.signin .or .bar {
+    flex: auto;
+    border: none;
+    height: 1px;
+    width: 100px;
+    background: #aaa;
+}
+
+.signin .or span {
+    color: #ccc;
+    padding: 0 0.8rem;
 }

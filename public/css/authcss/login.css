@@ -1,13 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600&display=swap');
 
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Cairo', sans-serif;
   font-weight: 300;
-  background: #25323c;
+  background: #164455;
   color: #fff;
   overflow: hidden;
   margin: 0px;
@@ -34,10 +34,12 @@ h6 {
   align-items: center;
   justify-content: center;
   height: 100vh;
+  box-shadow: inset 2px 2px 20px 10px #1d262d46;
 }
 
 #right {
   flex: 1;
+
 }
 
 #signin {
@@ -55,11 +57,12 @@ h6 {
 }
 
 #signin .logo {
-  margin-bottom: 8vh;
+  margin-bottom: 4vh;
+  margin-top: 4vw;
 }
 
 #signin .logo img {
-  width: 250px;
+  width: 270px;
 }
 
 #signin label {
@@ -71,17 +74,16 @@ h6 {
 #signin .text-input {
   margin-bottom: 1.3rem;
   width: 100%;
-  border-radius: 2px;
-  background: #181818;
+  border-radius: 5px;
+  background: #ebebeb;
   border: 1px solid #555;
-  color: #ccc;
+  color: rgb(0, 0, 0);
   padding: 0.5rem 1rem;
   line-height: 1.3rem;
 }
 
 #signin .primary-btn {
   width: 100%;
-  border-radius: 7px;
 }
 
 #signin .secondary-btn,
@@ -92,18 +94,25 @@ h6 {
 
 #signin .links a {
   display: block;
-  color: #fff;
+  color: rgb(248, 248, 248);
   text-decoration: none;
   margin-bottom: 1rem;
   text-align: center;
   font-size: 0.9rem;
 }
 
+#signin .links a:hover {
+  color: #b52432;
+  font-weight: 600;
+}
+
+
 #signin .or {
   display: flex;
   flex-direction: row;
   margin-bottom: 1.2rem;
   align-items: center;
+  box-sizing: border-box;
 }
 
 #signin .or .bar {
@@ -122,11 +131,29 @@ h6 {
   display: flex;
   justify-content: center;
   align-items: center;
-  /*background: url('#') no-repeat center center / cover;*/
-  background-color: #35434e;
+
   height: 100vh;
   text-align: center;
+  background: linear-gradient(-45deg, #990a0a, #b43251, #145d78, #1a3468);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
 }
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 
 #showcase .showcase-text {
   font-size: 3rem;
@@ -160,8 +187,9 @@ h6 {
   height: 2.7rem;
   display: block;
   border: 0;
-  border-radius: 2px;
+  border-radius: 5px;
   font-weight: 500;
+  font-size: medium;
   background: #b52432;
   color: #fff;
   text-decoration: none;
@@ -171,15 +199,15 @@ h6 {
 }
 
 .primary-btn:hover {
-  background-color: #b52432;
+  background-color: #4568b8;
 }
 
 .secondary-btn {
-  padding: 0.7rem 1rem;
+  padding-top: 5px;
   height: 2.7rem;
   display: block;
   border: 1px solid #f4f4f4;
-  border-radius: 2px;
+  border-radius: 5px;
   font-weight: 500;
   background: none;
   color: #fff;
