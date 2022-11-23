@@ -39,10 +39,6 @@
 
                     <button type="submit" class="primary-btn">Acessar</button>
                 </form>
-
-                <div class="links">
-                    <a href="#">Esqueceu sua senha?</a>
-                </div>
                 <div class="or">
                     <hr class="bar"/>
                     <span>OU</span>
