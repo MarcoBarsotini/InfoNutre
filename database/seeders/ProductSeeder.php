@@ -27,6 +27,12 @@ class ProductSeeder extends Seeder
             'image' => 'images/food/coca_2l.png'
         ]);
         Product::create([
+            'name' => 'Energético Monster',
+            'price' => 10,
+            'description' => 'Um energético a base de Taurina',
+            'image' => 'images/food/monster.png'
+        ]);
+        Product::create([
             'name' => 'Enroladinho de Salsicha',
             'price' => 5,
             'description' => 'Salgado',

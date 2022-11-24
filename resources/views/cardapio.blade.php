@@ -7,7 +7,7 @@
 @section('content')
 <section id="cardapio"> 
             <div class="container_cards">
-                <div class="card" style="width: 18rem;">
+                <div class="card">
                     <img src="{{ asset('images/food/coxinha.png') }}" class="card-img-top" alt="Foto de uma Coxinha de Frango">
                 <div class="card-body">
                     <h5 class="card-title"><b>Coxinha de Frango <br> R$5,00</h5></b>

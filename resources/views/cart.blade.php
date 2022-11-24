@@ -87,7 +87,7 @@
                   <div class="d-flex justify-content-evenly">
                     <form action="{{ route('cart.confirm') }}" method="POST">
                       @csrf
-                      <button class="btn btn-success">Concluir o Pedido</button>
+                      <button class="btn btn-success" onclick="alert('Obrigado pela compra! Seu pedido é o Número: ' + parseInt(Math.random() * 120))"> Concluir o Pedido </button>
                     </form>
                   </div></div><br>
                 </div>
