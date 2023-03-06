@@ -1,7 +1,7 @@
 
 # Infonutre
 
-Readme do Projeto InfoNutre.
+Finalizamos o TCC, então resolvi deixar o projeto OpenSource! Se for fazer alguma alteração ou usar meu software, considere deixar os créditos :P
 
 ## Abrindo o projeto
 
