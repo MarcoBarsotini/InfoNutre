@@ -130,7 +130,7 @@
                         <input class="form-control form-control-sm" id="formFileSm" type="file">
                     </div>
                     <div class="text-end">
-                        <button type="submit" class="btn btn-danger">Enviar</button>
+                        <button type="submit" class="btn btn-danger" onclick="alert('Recebemos seu formulário! Por favor, aguarde.')">Enviar</button>
                     </div>
                 </form>
             </div>
